@@ -1,0 +1,33 @@
+body {
+  margin: 0;
+  font-family: var(--font-stack);
+  background-color: var(--color-canvas-default);
+  color: var(--color-fg-default);
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 0;
+  margin-bottom: var(--spacing-medium);
+  font-weight: 600;
+  color: var(--color-fg-default);
+}
+
+a {
+  color: var(--color-accent-fg);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+* {
+  box-sizing: border-box;
+}

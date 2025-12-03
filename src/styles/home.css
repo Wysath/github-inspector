@@ -1,0 +1,118 @@
+/* Hero Section */
+.hero-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 4rem 1rem;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: var(--spacing-large);
+}
+
+.hero-section::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle at center, rgba(188, 140, 255, 0.15) 0%, transparent 50%);
+  z-index: -1;
+  pointer-events: none;
+}
+
+.hero-title {
+  font-size: 3.5rem;
+  font-weight: 800;
+  line-height: 1.1;
+  margin-bottom: 1rem;
+  background: linear-gradient(to right, #c9d1d9, #bc8cff);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  letter-spacing: -0.02em;
+}
+
+.hero-subtitle {
+  font-size: 1.25rem;
+  color: var(--color-fg-muted);
+  max-width: 600px;
+  margin-bottom: 2.5rem;
+  line-height: 1.6;
+}
+
+/* Enhanced Search Box */
+.search-container {
+  width: 100%;
+  max-width: 600px;
+  position: relative;
+}
+
+.search-box-wrapper {
+  display: flex;
+  align-items: center;
+  background-color: var(--color-canvas-subtle);
+  border: 1px solid var(--color-border-default);
+  border-radius: 100px;
+  padding: 0.5rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.search-box-wrapper:focus-within {
+  border-color: var(--color-accent-fg);
+  box-shadow: 0 0 0 3px rgba(188, 140, 255, 0.3), 0 8px 30px rgba(0, 0, 0, 0.3);
+  transform: translateY(-2px);
+}
+
+.search-icon {
+  margin-left: 1rem;
+  color: var(--color-fg-muted);
+}
+
+#search-input {
+  border: none;
+  background: transparent;
+  font-size: 1.1rem;
+  padding: 0.75rem 1rem;
+  width: 100%;
+  color: var(--color-fg-default);
+}
+
+#search-input:focus {
+  box-shadow: none;
+  outline: none;
+}
+
+.search-btn {
+  background-color: var(--color-accent-emphasis);
+  color: white;
+  border: none;
+  border-radius: 100px;
+  padding: 0.75rem 1.5rem;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.search-btn:hover {
+  background-color: #9e6ce6;
+}
+
+/* Results Area Styling */
+#results {
+  width: 100%;
+  margin-top: 2rem;
+}
+
+.results-count {
+  text-align: center;
+  color: var(--color-fg-muted);
+  margin-bottom: 1.5rem;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
