@@ -27,12 +27,6 @@ Le projet suit une architecture modulaire inspirée du modèle **MVC (Modèle-Vu
 - **`/src/components`** : Composants UI réutilisables (fonctions pures retournant des chaînes HTML).
 - **`/src/main.js` (Contrôleur)** : Point d'entrée, orchestration de l'application et gestion de l'état global.
 
-### Bonnes Pratiques
-
-- **Isolation des événements** : Les écouteurs d'événements sont attachés via des fonctions dédiées (`attach...Listeners`) après le rendu, gardant le contrôleur principal propre.
-- **Code Clean** : Variables explicites, pas de "magic numbers", suppression des `console.log` et gestion d'erreurs robuste.
-- **Composants Fonctionnels** : Les composants sont des fonctions simples retournant des littéraux de gabarits (Template Literals).
-
 ## 📦 Installation et Lancement
 
 1. **Cloner le projet**
